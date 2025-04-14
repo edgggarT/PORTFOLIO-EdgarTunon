@@ -240,6 +240,32 @@ section#home {
       no-repeat center center / cover;
 }
 
+.btn-scroll {
+  transition: 0.4s;
+  color: black;
+  display: block;
+  margin-top: 500px;
+  animation: btn-up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+.btn-scroll i {
+  font-size: 48px;
+}
+
+.btn-scroll:hover {
+  color: yellow;
+}
+
+@keyframes btn-up-down {
+  0% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
 /**************************/
 /* MEDIA QUERY */
 /**************************/

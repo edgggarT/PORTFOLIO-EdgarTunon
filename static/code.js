@@ -40,3 +40,12 @@ hamburgerMenu.addEventListener("click", toggleNav);
 navItems.forEach((nav) => {
   nav.addEventListener("click", toggleNav);
 });
+
+// BTN-SCROLL
+
+document.getElementById('btn-scroll').addEventListener('click', function() {
+  window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+  });
+});
