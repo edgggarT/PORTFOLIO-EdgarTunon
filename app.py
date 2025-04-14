@@ -25,7 +25,7 @@ def lenguajes():
 
 @app.route('/AcercaDe')
 def acerca_de():
-    return render_template('Acerca_de.html', nav_title="acerca de")
+    return render_template('acerca_de.html', nav_title="acerca de")
 
 
 if __name__=='__main__':
