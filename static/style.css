@@ -290,3 +290,79 @@ section#home {
     font-size: 2rem;
   }
 }
+
+/*
+MAIN CSS ALL PAGES
+*/
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #181818;
+  --contrast-color: #ffffff;
+}
+
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  margin-bottom: 100px;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 56px;
+  text-shadow: 7px 7px 4px black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+.hero p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 3px 3px 2px black;
+  letter-spacing: 1px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
