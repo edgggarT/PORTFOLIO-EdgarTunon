@@ -208,7 +208,7 @@ nav li a:active {
 /* SECTION */
 /***********************/
 
-section {
+section#home {
   width: 100%;
   height: 100vh;
   height: 100svh;
@@ -365,4 +365,165 @@ MAIN CSS ALL PAGES
     font-size: 30px;
     line-height: 36px;
   }
+}
+
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.section-title span {
+  position: absolute;
+  top: 4px;
+  color: rgba(142, 140, 140,0.2);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+  .section-title span {
+    font-size: 38px;
+}}
+
+
+/* 
+ACERCA DE STYLE
+*/
+
+.about .content {
+  border: 2px solid rgb(181, 181, 181);
+  border-radius: 10px;
+}
+.about .content h2 {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  margin-bottom: 30px;
+  display: flex;
+  color: black;
+  align-items: center;
+} 
+.about .content ul strong {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about p {
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(91, 89, 89);
+} 
+.about .content span {
+  font-size: 15px ;
+}
+.about .content ul i {
+  margin-right: 5px;
+  font-size: 16px;
+  color: yellow;
+  line-height: 0;
+}
+
+
+/* 
+INICIO DE RESUMEN
+*/
+
+.resume .row {
+  position: relative;
+}
+
+.resume .resume-title {
+  color: black;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #ffbb27;
+  position: relative;
+  margin: 20px;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  color:black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.resume .resume-item p {
+  color: black;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #ffbb27;
+  border: 2px solid var(--accent-color);
 }
