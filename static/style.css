@@ -54,6 +54,8 @@ a:visited {
 }
 
 /* NAV MENU ITEMS */
+
+
 nav ul {
   height: 60vh;
   height: 60svh;
@@ -222,6 +224,8 @@ section#home {
 .logo {
   position: fixed;
   z-index: 2;
+  color: white;
+  mix-blend-mode: difference;
   top: 1.5rem;
   left: 1.5rem;
   font-size: 1.4rem;
@@ -442,8 +446,8 @@ ACERCA DE STYLE
   font-family: Arial, Helvetica, sans-serif;
 }
 .about p {
-  font-size: 22px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 27px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(91, 89, 89);
 } 
 .about .content span {
@@ -452,7 +456,7 @@ ACERCA DE STYLE
 .about .content ul i {
   margin-right: 5px;
   font-size: 16px;
-  color: yellow;
+  color: rgb(203, 203, 12);
   line-height: 0;
 }
 
@@ -732,3 +736,24 @@ INICIO DE RESUMEN
 .contact .php-email-form button[type=submit]:hover {
   background: #d5950c;
 }
+
+/*
+  FOOTER
+*/
+
+footer {
+  background-color: rgb(216, 220, 12);  
+}
+
+footer .container .btn {
+  transition: 0.2s;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #080900;
+  animation: btn-up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+footer .container .btn:hover {
+  border: 2px solid aqua;
+  background-color: rgb(2, 107, 112);
+}
+
