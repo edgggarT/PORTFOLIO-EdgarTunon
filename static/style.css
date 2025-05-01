@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 
+body:not(.es) [lang="es"],
+body:not(.en) [lang="en"] {
+      display: none;
+}
+
 
 html {
   /* 
@@ -230,6 +235,13 @@ section#home {
   left: 1.5rem;
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
+}
+
+.switch {
+    position: fixed !important;
+    top: 5rem !important;
+    left: 1.5rem !important;
+    z-index: 2;
 }
 
 h1 {

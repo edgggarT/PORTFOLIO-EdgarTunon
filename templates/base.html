@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
     <title>BASE</title>
 </head>
 <body>
@@ -47,6 +48,9 @@
         <p class="logo">Edgar Tuñon / {{ nav_title }}</p>
         <a href="#about" id="btn-scroll" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a> 
     </section>
+    <div class="switch">
+        <input id="idiomaSwitch" type="checkbox" data-toggle="switchbutton" checked data-onstyle="outline-warning" data-offstyle="outline-info" checked data-width="75" data-height="25" data-onlabel="Español" data-offlabel="English">
+    </div>
     <main>
         {% block content %}
 
@@ -70,14 +74,15 @@
             </button>
         </div>
         <!-- Copyright -->
-        <div class="text-center text-white p-3" style="background-color: #706504;">
+        <div class="text-center text-black p-3" style="background-color: #f4e452;">
             © 2025 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">EdgarTuñon.com</a>
+            <a class="text-black" href="https://mdbootstrap.com/">EdgarTuñon.com</a>
         </div>
         <!-- Copyright -->
     </footer>
     <script src="{{ url_for('static', filename='code.js')}}"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
 </body>
 </html>
