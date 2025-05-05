@@ -228,7 +228,7 @@ section#home {
 
 .logo {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   color: white;
   mix-blend-mode: difference;
   top: 1.5rem;
@@ -241,7 +241,7 @@ section#home {
     position: fixed !important;
     top: 5rem !important;
     left: 1.5rem !important;
-    z-index: 2;
+    z-index: 4;
 }
 
 h1 {
@@ -391,7 +391,7 @@ MAIN CSS ALL PAGES
   position: relative;
 }
 .section-title h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -413,6 +413,7 @@ MAIN CSS ALL PAGES
 }
 .section-title p {
   margin-bottom: 0;
+  font-size: 26px;
   position: relative;
   z-index: 2;
 }
