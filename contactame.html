@@ -14,27 +14,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
     <title>CONTACTAME</title>
 </head>
 <body>
     <div class="overlay overlay-slide-left" id="overlay">
       <nav>
           <ul>
-              <li id="nav-1" class="slide-out-1 center">
-              <a href="index.html" class="center">Inicio</a>
-              </li>
-              <li id="nav-2" class="slide-out-2 center">
-              <a href="acerca_de.html" class="center">Acerca De</a>
-              </li>
-              <li id="nav-3" class="slide-out-3 center">
-              <a href="lenguajes.html" class="center">Lenguajes</a>
-              </li>
-              <li id="nav-4" class="slide-out-4 center">
-              <a href="proyectos.html" class="center">Proyectos</a>
-              </li>
-              <li id="nav-5" class="slide-out-5 center">
-              <a href="contactame.html" class="center">Contactame</a>
-              </li>
+            <li id="nav-1" class="slide-out-1 center">
+              <a href="index.html" class="center" id="HOME">Inicio</a>
+            </li>
+            <li id="nav-2" class="slide-out-2 center">
+              <a href="acerca_de.html" class="center" id="ABOUT">Acerca De</a>
+            </li>
+            <li id="nav-3" class="slide-out-3 center">
+              <a href="lenguajes.html" class="center" id="LANG">Lenguajes</a>
+            </li>
+            <li id="nav-4" class="slide-out-4 center">
+              <a href="proyectos.html" class="center" id="PROYECT">Proyectos</a>
+            </li>
+            <li id="nav-5" class="slide-out-5 center">
+              <a href="contactame.html" class="center" id="CONTACT">Contactame</a>
+            </li>
           </ul>
       </nav>
   </div>
@@ -44,61 +45,64 @@
       <div class="menu-bar3"></div>
   </div>
   <section id="home" class="center">
-      <p class="logo">Edgar Tuñon / {{ nav_title }}</p>
+      <p class="logo">Edgar Tuñon</p>
       <a href="#about" id="btn-scroll" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a> 
   </section>
+  <div class="switch">
+    <input id="idiomaSwitch" type="checkbox" data-toggle="switchbutton" checked data-onstyle="outline-warning" data-offstyle="outline-info" checked data-width="75" data-height="25" data-onlabel="Español" data-offlabel="English">
+  </div>
   <main>
     <section id="contact" class="contact section">
-        <div class="container section-title" data-aos="fade-up">
-          <span class="description-title">Contactame</span>
-          <h2>Contactame</h2>
-          <p>Ingresa tus datos en el formulario para ponerte en contacto</p>
-        </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <h3>Direccion</h3>
-                <p>Avenida Garay 510</p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
-                <i class="bi bi-telephone"></i>
-                <h3>Numero de telefono</h3>
-                <p>2352 123456</p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center">
-                <i class="bi bi-envelope"></i>
-                <h3>Correo Electronico</h3>
-                <p>edgartu@outlook.com</p>
-              </div>
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title" id="contacto_tituloSombreado">Contactame</span>
+        <h2 id="contacto_titulo">Contactame</h2>
+        <p id="contacto_subtitulo">Ingresa tus datos en el formulario para ponerte en contacto</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-geo-alt"></i>
+              <h3 id="contacto_direccion">Direccion</h3>
+              <p>Avenida Garay 510</p>
             </div>
           </div>
-          <form action="/contactame" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Nombre y Apellido">
-              </div>
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Correo electronico">
-              </div>
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Asunto">
-              </div>
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Mensaje"></textarea>
-              </div>
-              <div class="col-md-12 text-center">
-                <button type="submit">Enviar</button>
-              </div>
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
+              <i class="bi bi-telephone"></i>
+              <h3 id="contacto_numero">Numero de telefono</h3>
+              <p>2352 123456</p>
             </div>
-          </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-envelope"></i>
+              <h3 id="contacto_email">Correo Electronico</h3>
+              <p>edgartu@outlook.com</p>
+            </div>
+          </div>
         </div>
-      </section>
+        <form action="contact-form" id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" class="form-control" placeholder="Nombre y Apellido (Name & Last Name)" required>
+            </div>
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" id ="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto (Subject)" required>
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Mensaje (Messege)" required></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <button type="submit" id="contacto_enviar">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+  </section>
   </main>
   <footer class="text-center text-lg-start">
     <div class="container d-flex justify-content-center py-5">
@@ -124,5 +128,10 @@
   <script src="code.js"></script>
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init('gV8wJoN39PYe7F9CG')
+  </script>
 </body>
 </html>
