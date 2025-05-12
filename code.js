@@ -99,3 +99,18 @@ document.getElementById('idiomaSwitch').addEventListener('change', function() {
 });
 
 actualizarIdioma();
+
+
+// ENVIAR MENSAJE POR MAIl DESDE CONTACTAME
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_u27img8','template_rtxeo9s', this)
+  .then(function() {
+    alert('Mensaje Enviado correctamente');
+    document.getElementById('contact-form').reset();
+  }, function(error) {
+    alert('Error al enviar el mensaje: '+ JSON.stringify(error));
+  });
+});

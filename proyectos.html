@@ -14,27 +14,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
     <title>PROYECTOS</title>
 </head>
 <body>
   <div class="overlay overlay-slide-left" id="overlay">
     <nav>
         <ul>
-            <li id="nav-1" class="slide-out-1 center">
-            <a href="index.html" class="center">Inicio</a>
-            </li>
-            <li id="nav-2" class="slide-out-2 center">
-            <a href="acerca_de.html" class="center">Acerca De</a>
-            </li>
-            <li id="nav-3" class="slide-out-3 center">
-            <a href="lenguajes.html" class="center">Lenguajes</a>
-            </li>
-            <li id="nav-4" class="slide-out-4 center">
-            <a href="proyectos.html" class="center">Proyectos</a>
-            </li>
-            <li id="nav-5" class="slide-out-5 center">
-            <a href="contactame.html" class="center">Contactame</a>
-            </li>
+          <li id="nav-1" class="slide-out-1 center">
+            <a href="index.html" class="center" id="HOME">Inicio</a>
+          </li>
+          <li id="nav-2" class="slide-out-2 center">
+            <a href="acerca_de.html" class="center" id="ABOUT">Acerca De</a>
+          </li>
+          <li id="nav-3" class="slide-out-3 center">
+            <a href="lenguajes.html" class="center" id="LANG">Lenguajes</a>
+          </li>
+          <li id="nav-4" class="slide-out-4 center">
+            <a href="proyectos.html" class="center" id="PROYECT">Proyectos</a>
+          </li>
+          <li id="nav-5" class="slide-out-5 center">
+            <a href="contactame.html" class="center" id="CONTACT">Contactame</a>
+          </li>
         </ul>
     </nav>
 </div>
@@ -44,58 +45,59 @@
     <div class="menu-bar3"></div>
 </div>
     <section id="home" class="center">
-      <p class="logo">Edgar Tuñon / {{ nav_title }}</p>
+      <p class="logo">Edgar Tuñon</p>
       <a href="#about" id="btn-scroll" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a> 
     </section>
+    <div class="switch">
+      <input id="idiomaSwitch" type="checkbox" data-toggle="switchbutton" checked data-onstyle="outline-warning" data-offstyle="outline-info" checked data-width="75" data-height="25" data-onlabel="Español" data-offlabel="English">
+    </div>
     <main>
       <section id="portfolio" class="portfolio section">
-          <div class="container section-title" data-aos="fade-up">
-            <span class="description-title">Proyectos</span>
-            <h2>Proyectos</h2>
-            <p>Estos son algunos de los proyectos:</p>
-          </div>
-          <div class="container-fluid">
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-              <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-app">
-                  <div class="portfolio-content h-100">
-                    <img src="https://blog.goodbarber.com/photo/gal/pic/gal-25193120.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <p data-gallery="portfolio-gallery-app" class="glightbox preview-link">Desarrollo de aplicaciones</p>
-                    </div>
+        <div class="container section-title" data-aos="fade-up">
+          <span class="description-title" id="proyecto_tituloSombreado">Proyectos</span>
+          <h2 id="proyecto_titulo">Proyectos</h2>
+          <p id="proyecto_subtitulo">Estos son algunos de los proyectos:</p>
+        </div>
+        <div class="container-fluid">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="https://blog.goodbarber.com/photo/gal/pic/gal-25193120.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p data-gallery="portfolio-gallery-app" class="glightbox preview-link" id="proyecto1">Desarrollo de aplicaciones</p>
                   </div>
                 </div>
-
-                <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-product">
-                  <div class="portfolio-content h-100">
-                    <img src="https://www.uplers.com/wp-content/uploads/2021/12/shutterstock_1918015178-Converted.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <p class="glightbox preview-link">Creacion de paginas web</p>
-                    </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="https://www.uplers.com/wp-content/uploads/2021/12/shutterstock_1918015178-Converted.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p class="glightbox preview-link" id="proyecto2">Creacion de paginas web</p>
                   </div>
                 </div>
-
-                <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-branding">
-                  <div class="portfolio-content h-100">
-                    <img src="https://zibtek-ghost-blog.sfo3.cdn.digitaloceanspaces.com/2022/03/Database-Development-Processes.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <p data-gallery="portfolio-gallery-branding" class="glightbox preview-link">Creacion de bases de datos</p>
-                    </div>
+              </div>
+  
+              <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-branding">
+                <div class="portfolio-content h-100">
+                  <img src="https://zibtek-ghost-blog.sfo3.cdn.digitaloceanspaces.com/2022/03/Database-Development-Processes.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p data-gallery="portfolio-gallery-branding" class="glightbox preview-link" id="proyecto3">Creacion de bases de datos</p>
                   </div>
                 </div>
-
-                <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-books">
-                  <div class="portfolio-content h-100">
-                    <img src="https://static.vecteezy.com/system/resources/previews/009/189/185/non_2x/human-resources-automation-workforce-employment-social-crisis-automation-development-to-optimize-human-resource-necessity-artificial-intelligence-domination-developer-create-open-robotic-soft-vector.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <p data-gallery="portfolio-gallery-book" class="glightbox preview-link">Automatizacion</p>
-                    </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-2 portfolio-item isotope-item filter-books">
+                <div class="portfolio-content h-100">
+                  <img src="https://static.vecteezy.com/system/resources/previews/009/189/185/non_2x/human-resources-automation-workforce-employment-social-crisis-automation-development-to-optimize-human-resource-necessity-artificial-intelligence-domination-developer-create-open-robotic-soft-vector.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p data-gallery="portfolio-gallery-book" class="glightbox preview-link" id="proyecto4">Automatizacion</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      </section>
+        </div>
+    </section>
     </main>   
     <footer class="text-center text-lg-start">
       <div class="container d-flex justify-content-center py-5">
@@ -121,5 +123,6 @@
   <script src="code.js"></script>
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
 </body>
 </html>
