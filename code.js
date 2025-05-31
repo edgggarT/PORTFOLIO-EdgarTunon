@@ -57,7 +57,7 @@ const traducciones = {
   es: {
     HOME: "INICIO", ABOUT: "ACERCA DE", LANG: "LENGUAJES", PROYECT: "PROYECTOS", CONTACT: "CONTACTAME",
     texto: "DESARROLLADOR WEB, FRONTEND Y BACKEND", texto_lenguajes_tituloSombreado: "Mis Lenguajes & Frameworks", texto_lenguajes_titulo: "Mis Lenguajes & Frameworks", texto_lenguajes_subtitulo: "Estos son algunos de los lenguajes y Frameworks que utilizo:",
-    python_info: "Lenguaje donde creo la logica y el enrutado", db_info: "Creacion y gestion de las bases de datos", flask_info: "Framework que se integra en python para facilitar la creacion del Backend", bootstrap_info: "Framework que facilita la creacion del Frontend",
+    python_info: "Lenguaje donde creo la logica y el enrutado", db_info: "Creacion y gestion de las bases de datos", flask_info: "Framework que se integra en python para facilitar la creacion del Backend", bootstrap_info: "Framework que facilita la creacion del Frontend", git_info: "Programa de control de versiones", github_info: "Alojamiento de proyectos utilizando el control de versiones Git", javasript_info: "Interactividad y dinamismo en sitios webs con JavaScript", duoweb_info: "Estructuras y manejo visual de sitios webs",
     texto_acerca_tituloSombreado: "ACERCA DE MI", texto_acerca_titulo: "ACERCA DE MI", texto_acerca_subtitulo: "Estudiante de analista de sistemas con mucho interes en el desarrollo web.",
     titulo_info: "UI/UX Diseñador & Desarrollador Web.", 
     info_fdn: "Fecha de nacimiento:" , info_pagina: "Pagina:" , info_telefono: "Telefono:", info_ciudad: "Ciudad:" , info_edad: "Edad:" , info_pais: "Pais:", info_email: "Email:", info_grado: "Grado", info_grado_valor: "Estudiante" ,
@@ -71,7 +71,7 @@ const traducciones = {
     HOME: "HOME", ABOUT: "ABOUT ME", LANG: "LANGUAGES", PROYECT: "PROYECTS", CONTACT: "CONTACT ME",
     texto: "WEB DEVELOP, FRONTEND & BACKEND",
     texto_lenguajes_tituloSombreado: "MY LANGUAGES & FRAMEWORKS" , texto_lenguajes_titulo: "MY LANGUAGES & FRAMEWORK" , texto_lenguajes_subtitulo: "This is some of the langueages and frameworks of i use",
-    python_info: "Where i create the logic and routed", db_info: "Creation and managment of the databases", flask_info: "Framework that is integrated in python to ease the creation of Backend", bootstrap_info: "Framework that ease the creation of Frontend",
+    python_info: "Where i create the logic and routed", db_info: "Creation and managment of the databases", flask_info: "Framework that is integrated in python to ease the creation of Backend", bootstrap_info: "Framework that ease the creation of Frontend", git_info: "Version control program", github_info: "Project hosting using Git version control", javasript_info: "Interactivity and dynamism in websites with JavaScript", duoweb_info: "Website structures and visual management",
     texto_acerca_tituloSombreado: "ABOUT ME", texto_acerca_titulo: "ABOUT ME", texto_acerca_subtitulo: "Systems analyst student with a strong interest in web development.",
     titulo_info: "UI/UX Designer & Web Developer." ,
     info_fdn: "Birthdate:", info_pagina: "Web page:" , info_telefono: "Phone:", info_ciudad: "City:" , info_edad: "Age:" , info_pais: "Country:", info_email: "Email:", info_grado: "Degree", info_grado_valor: "Student",
