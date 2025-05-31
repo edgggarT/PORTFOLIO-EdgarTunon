@@ -39,15 +39,21 @@ git checkout -b <nombre de la rama>  (crea y nos mueve a esa rama)
 git rm --cached <nombreArchivo> (con esto podemos quitar un archivo del stage)
 touch .gitignore (se crea un archivo que me permite ocultar archivos)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 git stash   (guarda los cambios, menos los que no estan trackeados, de la rama en la que me encuentro en una memoria)
 git stash pop   (todos los cambios que copiamos se pegan en la rama en la que estamos)
 git stash drop  (borra el ultimo elemento copiado)
 git stash clear (borra todos los elementos copiados)
 =======
+=======
+>>>>>>> Stashed changes
 git stage   (guarda los cambios, menos los que no estan trackeados, de la rama en la que me encuentro en una memoria)
 git stage pop   (todos los cambios que copiamos se pegan en la rama en la que estamos)
 git stage drop  (borra el ultimo elemento copiado)
 git stage clear (borra todos los elementos copiados)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 CONEXION CON GITHUB:

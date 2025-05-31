@@ -555,6 +555,7 @@ INICIO DE RESUMEN
   padding: 50px 30px;
   transition: all 0.3s ease-in-out;
   height: 100%;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
